@@ -30,7 +30,7 @@ body {
 
 title, #title {
 	font-family: 'Oswald', sans-serif;
-	font-size: 96px;
+	font-size: 72px;
 }
 
 /* Div Sizing **********************************************************************/
@@ -63,7 +63,7 @@ title, #title {
 #questionDiv {
 	
 	color: #ff4040;
-	
+
 
 }
 
@@ -73,6 +73,7 @@ title, #title {
 	color: white;
 	cursor: pointer; 
 	cursor: hand;
+	font-size: 20px;
 }
 
 .choice img {

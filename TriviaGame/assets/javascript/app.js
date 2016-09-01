@@ -1,9 +1,8 @@
 $(document).ready(function(){
 
-// Declare Variable ////////////////////////////////////////////////////////////////////////////
 	
-	// Dom Elements /////////////////////////////
-	var $timerDiv = $('#timerDiv');
+	// Dom 
+	
 	var $timerSpan = $('#timerSpan');
 	var $timeRemaining = $('#timeRemaining');
 	var $question = $('#questionDiv');
@@ -137,51 +136,10 @@ $(document).ready(function(){
 	    return array;
 	}
 
-	function playMusic(){
-
-		music = Math.floor(Math.random() * playlist.length)
-
-		$('#title').append(playlist[music]);
-
-		playlist[music].get(0).play();
-
-	}
-
-// Image Creation /////////////////////////////////////////////////////////////////////////////
 	
-	var batShark = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/14y3bdRzH8aT0k/giphy.gif" });
 
-	var penguin = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/pNAkiBswVUu52/giphy.gif"});
-
-	var baneCat = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/3sS46VYO8KqWY/giphy.gif"});
-
-	var kevinConroy = '<iframe width="560" height="315" src="https://www.youtube.com/embed/g7jxcEqE5ic?rel=0&autoplay=1&start=5&amp;controls=0&amp;showinfo=0" frameborder="0" allowfullscreen></iframe>'
-
-	var hamillJoker = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/vZ57IYRNP6CCk/giphy.gif"});
-
-	var barb = $("<img>", {class: 'answerImg', src: "http://comicvine.gamespot.com/api/image/scale_medium/4459948-killing-joke-joker-takes-pictures.jpg"});
-
-	var harley = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/l2JecKRWml6Sp2ufC/giphy.gif"});
-
-	var oracleImg = $("<img>", {class: 'answerImg', src: "http://img.cinemablend.com/cb/1/6/9/a/6/a/169a6a79e3c801441cf70525ffca193d2d8cc6a07e7eee8ab38f83035b974458.jpg"});
-
-	var nightwing = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/3o7ZetcJWG0LFI1n1e/giphy.gif"});
-
-	var jasonTodd = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/t8clt4CIBfaVO/giphy.gif"});
-
-	var joeChill = $("<img>", {class: 'answerImg', src: "http://static8.comicvine.com/uploads/scale_small/11127/111278246/5090794-2064367790-latest"});
-
-	var noraImg = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/Z0yUOa1WWf5rW/giphy.gif"});
-
-	var martha = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/k5EfdqGN3A1eE/giphy.gif"});
-
-	var billFingerImg = $("<img>", {class: 'answerImg', src: "https://numberonebatfan.files.wordpress.com/2015/08/bill-the-boy-wonder-site-bill-finger-trading-card-1.jpg?w=604"});
-	var talia = $("<img>", {class: 'answerImg', src: "https://upload.wikimedia.org/wikipedia/en/8/8e/BATMAN,_INCORPORATED_vol.2_2_2012_variant.jpg"});
-	// var damian = $("<img>", {class: 'answerImg', src: "https://media0.giphy.com/media/XHcuph8mKHw52/200.gif"});
-	var harveyDentImg = $("<img>", {class: 'answerImg', src: "https://media0.giphy.com/media/TvZYht7srnIiY/200.gif"});
-	// var scarecrow = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/gYDW7y9GcNzC8/giphy.gif"});
-	// var penguinDevito = $("<img>", {class: 'answerImg', src: "https://media.giphy.com/media/fWqDxyYcnZN96/giphy.gif"});
-	var matches = $("<img>", {class: 'answerImg', src: "http://images.techtimes.com/data/images/full/177577/matches-malone.jpg"});
+// Images
+	
 	var lobos = $("<img>", {class: 'answerImg', src: "assets/images/lobos.jpg"});
 	var angela = $("<img>", {class: 'answerImg', src: "assets/images/angela.jpg"});
 	var ghost = $("<img>", {class: 'answerImg', src: "assets/images/ghost.jpg"});
@@ -200,30 +158,12 @@ $(document).ready(function(){
 	var julio = $("<img>", {class: 'answerImg', src: "assets/images/julio.jpg"});
 	var ruiz = $("<img>", {class: 'answerImg', src: "assets/images/ruiz.jpg"});
 	var truth = $("<img>", {class: 'answerImg', src: "assets/images/truth.jpg"});
-
-// Sound Creation /////////////////////////////////////////////////////////////////////////////
-
-	// sound effects
-
-	var baneInCharge = $("<audio>", {class: 'answerSound', src: "assets/sounds/baneincharge.ogg"});
+	var jukebox = $("<img>", {class: 'answerImg', src: "assets/images/jukebox.jpg"});
+	var greg = $("<img>", {class: 'answerImg', src: "assets/images/greg.jpg"});
+	var paz = $("<img>", {class: 'answerImg', src: "assets/images/paz.jpg"});
 
 
-	// music
-
-	var batmanBeginsTheme = $("<audio>", {class: 'answerSound', src: "assets/sounds/batmanbeginstheme.mp3"});
-
-	var batmanAnimatedTheme = $("<audio>", {class: 'answerSound', src: "assets/sounds/batmananimatedtheme.mp3"});
-
-	var arkhamCity = $("<audio>", {class: 'answerSound', src: "assets/sounds/arkhamcitytheme.mp3"});
-
-	var gothamCity = $("<audio>", {class: 'answerSound', src: "assets/sounds/gothamcity.mp3"});
-
-	// playlist for music
-
-	var playlist = [batmanAnimatedTheme, batmanBeginsTheme, arkhamCity, gothamCity]
-
-
-// Question Creation //////////////////////////////////////////////////////////////////////////
+// Questions 
 
 
 	var location = new question("Where does POWER take place?", ['Los Angeles', 'Miami', 
@@ -234,13 +174,18 @@ $(document).ready(function(){
 
 	var dogName = new question("What's Ruiz's side hustle?",
 		["Bodega", 'Boxing Gym', 'Restaurant', 'Autoshop'], 'Boxing Gym', ruiz);
+	//anytime I tried to change this variable's name 'dogname' the html would render improperly so I left named this way)
+
 
 	var shawnKiller = new question("Who killed Shawn?",
 		['Tasha', 'Ghost', 'Dre', 'Kanan'], 'Kanan', kanan);
 
-	var children = new question("How many children to Ghost and Tasha have?",
+	var children = new question("How many children do Ghost and Tasha have?",
 		['0', '1', '2', '3'], 
 		'3', ghosttasha);
+
+	var laundromat = new question("Who helps Tommy move money in/out of the laundromat?",
+		['Tasha', 'Ghost', 'Holly', 'Julio'], 'Julio', julio);
 
 	var nightclub = new question("What's the name of Ghost's nightclub?",
 		['Trust', 'Honesty', 'Loyalty', 'Truth'], 'Truth', truth);
@@ -249,12 +194,12 @@ $(document).ready(function(){
 		['Blondes', 'Brunettes', 'Redheads'], "Redheads", redheads);
 
 	var sister = new question("What's Angela's sister's name?",
-		['Paola', 'Paz', 'Pamela', 'Penelope'], 'Paz', angela);
+		['Paola', 'Paz', 'Pamela', 'Penelope'], 'Paz', paz);
 
-	var network = new question("What's network airs the series?",
+	var network = new question("Which network airs the series?",
 		[ 'Showtime', 'HBO', 'STARZ', 'FOX'], 'STARZ', power);
 
-	var hit = new question("Who ordered the hit on Ghost in Season 3?", ['Tasha', 'Tommy', 'Lobos', 'Holly'],
+	var hit = new question("Who ordered the hit on Ghost?", ['Tasha', 'Tommy', 'Lobos', 'Holly'],
 		'Lobos', lobos);
 
 	var angelaProfession = new question("What is Angela's profession?", ['Lawyer', 'Federal Agent', 'Police Officer', 'Secret Service'],
@@ -269,7 +214,7 @@ $(document).ready(function(){
 		[ 'Eminem', 'Dr. Dre', '50-Cent', 'G-Unit'], '50-Cent', kanan);
 
 	var jukebox = new question("What's Kanan's cousin's name?", ['Julio', 'Dre', 'Jukebox', 'Rolla'],
-		'Jukebox', talia);
+		'Jukebox', jukebox);
 
 	var tashaFriend = new question("What is Tasha's best friend's name?", ['Latrice', 'Lasagna', 'Latoya', 'Lakeisha'], 'Lakeisha', lala);
 
@@ -290,11 +235,9 @@ $(document).ready(function(){
 
 	questions = [location, ghostName, dogName, shawnKiller, tommyType, sister, children,
 	 network, nightclub, angelaProfession, hit, realGhost, premiereYear, showSong, jukebox, tashaFriend, tommyShooter, tommyHolly, years,
-	 tashaBday];
+	 tashaBday, lobosConnect, laundromat];
 
-	//questions = shuffleArray(questions);
 
-	//currentQuestion = questions[questionIndex];
 
 
 // General Functions //////////////////////////////////////////////////////////////////////////
@@ -307,9 +250,10 @@ $(document).ready(function(){
 		if (questionIndex == questions.length) {
 			// end game
 			$timerSpan.hide();
-			$question.html("Game Over! Hit Refresh to play again!")
+			$question.html("Game Over!")
 
 			displayResults();
+
 
 			// display end screen
 
@@ -398,6 +342,5 @@ $(document).ready(function(){
 
 	$timerSpan.hide(); // start with 'time remaining' hidden.
 
-	playMusic();
 
 })// end of jQuery
