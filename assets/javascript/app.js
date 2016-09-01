@@ -151,11 +151,11 @@ $(document).ready(function(){
 	var lala = $("<img>", {class: 'answerImg', src: "assets/images/lala.jpg"});
 	var ghosttasha = $("<img>", {class: 'answerImg', src: "assets/images/ghosttasha.jpg"});
 	var redheads = $("<img>", {class: 'answerImg', src: "assets/images/redheads.jpg"});
-	var tashaBday = $("<img>", {class: 'answerImg', src: "assets/images/tashaBday.jpg"});
+	var tashaBday = $("<img>", {class: 'answerImg', src: "assets/images/tashabday.jpg"});
 	var mark = $("<img>", {class: 'answerImg', src: "assets/images/mark.jpg"});
 	var power = $("<img>", {class: 'answerImg', src: "assets/images/power.jpg"});
 	var ghosttommy = $("<img>", {class: 'answerImg', src: "assets/images/ghosttommy.jpg"});
-	var julio = $("<img>", {class: 'answerImg', src: "assets/images/julio.jpg"});
+	var julio = $("<img>", {class: 'answerImg', src: "assets/images/juliotommy.jpg"});
 	var ruiz = $("<img>", {class: 'answerImg', src: "assets/images/ruiz.jpg"});
 	var truth = $("<img>", {class: 'answerImg', src: "assets/images/truth.jpg"});
 	var jukebox = $("<img>", {class: 'answerImg', src: "assets/images/jukebox.jpg"});
